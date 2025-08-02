@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@plugin "tailwindcss-primeui";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Overpass", -apple-system, sans-serif;
+}
+
+.flashlight-container {
+  position: relative;
+}
+
+.color-image {
+  clip-path: circle(0px at 0 0);
+  transition: opacity 0.4s ease-out, clip-path 0s ease-out;
+}
